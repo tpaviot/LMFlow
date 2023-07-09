@@ -370,8 +370,9 @@ class HFDecoderModel(DecoderModel, Tunable):
                 "not supported yet"
             )
 
+        print(f"Thomas SataSet backend: {dataset.get_backend()}")
         dataset_type = dataset.get_type()
-
+        print(f"Thomas DataSetType: {dataset_type}")
         # Requires three types of information for tokenizing different datasets
         #   1) Which fields require tokenization, e.g.
         #        "text2float": "text", but not "float"
